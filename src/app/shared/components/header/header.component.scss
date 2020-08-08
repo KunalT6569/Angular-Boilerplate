@@ -1,0 +1,16 @@
+@import '../../../../styles/core/variables';
+@import '../../../../styles/helpers/typo';
+
+.app-header {
+    @include font(22px);
+    height: 100px;
+    background-color: $color-primary;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: $main-font-color;
+    &:hover {
+        color: $highlight-color;
+    }
+}

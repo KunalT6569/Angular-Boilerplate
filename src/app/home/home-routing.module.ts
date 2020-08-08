@@ -1,10 +1,14 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@shared/shared.module';
+import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { WhatIDoComponent } from './components/what-i-do/what-i-do.component';
 import { HomeComponent } from './home.component';
 
-const importedDeclarations = [HomeComponent, MainComponent];
+const importedDeclarations = [HomeComponent, MainComponent, IntroComponent, WhatIDoComponent, SkillsComponent];
 
 const routes: Routes = [
   {
@@ -16,7 +20,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [...importedDeclarations],
-  imports: [RouterModule.forChild(routes), SharedModule],
+  imports: [CommonModule, RouterModule.forChild(routes), SharedModule],
   exports: [RouterModule],
 })
 export class HomeRoutingModule {}

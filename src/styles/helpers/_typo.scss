@@ -1,4 +1,11 @@
-$default-font-family: Lora, 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+$default-font-family: 'Oxygen', sans-serif;
+
+body {
+    font-family: $default-font-family;
+    color: $highlight-color;
+}
 
 @mixin font($size, $weight: normal, $family: $default-font-family) {
   font-size: $size;
@@ -6,7 +13,7 @@ $default-font-family: Lora, 'Helvetica Neue', sans-serif;
   font-weight: $weight;
 }
 
-@for $i from 8 to 32 {
+@for $i from 8 to 64 {
   .sz-#{$i} {
     @include font($i + px);
   }
@@ -35,4 +42,8 @@ $default-font-family: Lora, 'Helvetica Neue', sans-serif;
 }
 .t-a-r {
   text-align: right;
+}
+
+.t-hl {
+    color: $secondary-color;
 }

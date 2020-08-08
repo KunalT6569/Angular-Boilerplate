@@ -1,0 +1,13 @@
+<div class="sz-60">My Skills</div>
+
+<div class="m-4"></div>
+
+<div class="d-f skills-container">
+<div class="d-f a-i-c m-t-4 w-40 m-r-2" *ngFor="let skill of skills">
+    <img class="thumbnail" [attr.src]="skill.thumbnail" alt="">
+    <div class="m-l-4 d-f f-d-c j-c-c">
+        <span class="sz-38">{{skill.name}}</span>
+        <span class="m-t-1 t-hl">{{skill.level}}</span>
+    </div>
+</div>
+</div>
