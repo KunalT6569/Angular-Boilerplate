@@ -18,6 +18,10 @@ export class WhatIDoComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    this.startTimer();
+  }
+
+  private startTimer() {
     this.timer = setInterval(() => {
       this.setNextIndex();
     }, 2000);
@@ -28,5 +32,12 @@ export class WhatIDoComponent implements OnInit {
     if (this.currentWhatIDoListIndex >= this.whatIDoList.length) {
       this.currentWhatIDoListIndex = 0;
     }
+  }
+
+  restartTimer() {
+    if (this.timer) {
+      clearInterval(this.timer);
+    }
+    this.startTimer();
   }
 }

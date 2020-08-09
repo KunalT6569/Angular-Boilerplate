@@ -4,11 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@shared/shared.module';
 import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
+import { SkillSingleComponent } from './components/skills/skill-single/skill-single.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { WhatIDoComponent } from './components/what-i-do/what-i-do.component';
 import { HomeComponent } from './home.component';
 
-const importedDeclarations = [HomeComponent, MainComponent, IntroComponent, WhatIDoComponent, SkillsComponent];
+const importedDeclarations = [
+  HomeComponent,
+  MainComponent,
+  IntroComponent,
+  WhatIDoComponent,
+  SkillsComponent,
+  SkillSingleComponent,
+];
 
 const routes: Routes = [
   {

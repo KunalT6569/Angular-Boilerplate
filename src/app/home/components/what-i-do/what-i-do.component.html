@@ -1,12 +1,25 @@
 <div class="container">
-  <div class="d-f sz-40">
-    <span class="sz-60 p-b-4">
-      <b>What I do? </b>
-    </span>
-  </div>
+  <div class="what-i-do-content">
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <div class="title is-1">
+          <b>What I do? </b>
+        </div>
+      </div>
+    </div>
 
-  <div class="intro-line sz-44">
-    <span class="opacity-low">I'm a </span>
-    <span class="what-i-do t-hl" (click)="setNextIndex()">{{whatIDoList[currentWhatIDoListIndex]}}</span>
+    <div class="columns is-centered mt-4">
+      <div class="column is-two-thirds">
+        <div class="title l-font low-opacity">I'm a</div>
+        <div class="title mt-0 l-font what-i-do" (click)="setNextIndex(); restartTimer()">
+          {{ whatIDoList[currentWhatIDoListIndex] }}
+        </div>
+        <div class="columns is-right is-centered">
+          <div class="column is-1" *ngFor="let whatIDo of whatIDoList; let i = index;">
+            <div class="indicator" [ngClass]="{'active': whatIDoList[currentWhatIDoListIndex] === whatIDo }" (mouseenter)="currentWhatIDoListIndex = i"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

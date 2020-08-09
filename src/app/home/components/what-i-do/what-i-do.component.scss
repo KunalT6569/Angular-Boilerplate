@@ -1,13 +1,29 @@
-@import '../../../../styles/core/variables';
+// @import '../../../../styles/core/variables';
 
 .container {
-    height: 600px;
+    height: 700px;
+}
+
+.what-i-do-content {
+    height: inherit;
 }
 
 .what-i-do {
     cursor: pointer;
 }
 
-.opacity-low {
-    opacity: 0.3;
+.indicator {
+    height: 12px;
+    width: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #666;
+    
+    &.active {
+        background-color: #666;
+    }
 }
+
+// .opacity-low {
+//     opacity: 0.3;
+// }

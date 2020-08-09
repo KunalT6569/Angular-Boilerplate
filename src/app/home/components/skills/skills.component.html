@@ -1,13 +1,17 @@
-<div class="sz-60">My Skills</div>
+<div class="container">
+  <div class="columns is-centered">
+    <div class="title mb-4 column is-two-thirds xl-font">My Skills</div>
+  </div>
 
-<div class="m-4"></div>
-
-<div class="d-f skills-container">
-<div class="d-f a-i-c m-t-4 w-40 m-r-2" *ngFor="let skill of skills">
-    <img class="thumbnail" [attr.src]="skill.thumbnail" alt="">
-    <div class="m-l-4 d-f f-d-c j-c-c">
-        <span class="sz-38">{{skill.name}}</span>
-        <span class="m-t-1 t-hl">{{skill.level}}</span>
+  <div class="columns is-multiline is-centered">
+    <div class="column is-12">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-4" *ngFor="let skill of skills">
+            <app-skill-single [skill]="skill"></app-skill-single>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </div>
