@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Jost&display=swap');
 
 // Set your brand colors
 $purple: #8A4D76;
@@ -14,7 +14,7 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0E0;
 
 // Update Bulma's global variables
-$family-sans-serif: 'Didact Gothic', sans-serif;;
+$family-sans-serif: 'Jost', sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
@@ -44,4 +44,8 @@ $input-shadow: none;
 
 .l-font {
     font-size: 50px !important;
+}
+
+.font-2 {
+    font-family: 'Antic Slab', serif;
 }

@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-two-thirds is-centered">
+      <div class="title mb-4 xl-font">
+        {{ title }}
+      </div>
+      <div class="title is-4 mb-4 low-opacity">
+        {{ subTitle }}
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-multiline is-centered">
+    <div class="column is-12">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-4-desktop" *ngFor="let project of projects">
+            <app-project-single [project]="project"></app-project-single>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="card column">
+  <div class="card-image">
+    <figure class="image">
+      <img [attr.src]="project.thumbnail" alt="Placeholder image" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content is-vcentered">
+        <div class="">
+          <div class="title is-4 mb-0">{{ project.name }}</div>
+        </div>
+        <div class="subtitle is-6 mt-2" [innerHTML]="project.description"></div>
+        <div class="mt-0">{{ project.duration }}</div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="mb-2">Tech Stack</div>
+      <span
+        class="tag is-light mr-3 mb-3"
+        *ngFor="let tech of project.techStack"
+      >
+        {{ tech }}
+      </span>
+
+      <div>
+        <a
+          *ngIf="project.longDescription"
+          href="javascript:void(0)"
+          (click)="showDescription = true"
+          >Read more...</a
+        >
+      </div>
+    </div>
+    <div class=""></div>
+
+    <article
+      *ngIf="showDescription"
+      class="card-content-overlay message is-dark"
+    >
+      <div class="message-header">
+        <p>{{ project.name }}</p>
+        <button
+          class="delete"
+          aria-label="delete"
+          (click)="showDescription = false"
+        ></button>
+      </div>
+      <div class="message-body">
+        {{ project.longDescription }}
+      </div>
+    </article>
+  </div>
+</div>
