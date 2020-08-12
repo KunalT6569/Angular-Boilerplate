@@ -80,25 +80,31 @@ export class MainComponent implements OnInit {
           <br/>
           • <b>50+ technical blogs`,
         thumbnail: 'assets/images/medium-blogs.png',
-        techStack: ['JavaScript', 'Node.Js', 'Express', 'Unity'],
-      },{
+        techStack: ['JavaScript', 'Node.Js', 'Express', 'Unity', 'HTML'],
+      }, {
         name: 'knowledgescoops.com',
         description:
           `Created my personal blog <b><a href="https://knowledgescoops.com" target="_blank">knowledgescoops.com</a></b> on blogger with custom website theming and a lot of content`,
         thumbnail: 'assets/images/knowledgescoops.png',
-        techStack: ['JavaScript', 'Node.Js', 'Express', 'Unity'],
-      },{
+        techStack: ['JavaScript', 'Node.Js', 'Express', 'Unity', 'HTML', 'CSS'],
+      }, {
         name: 'Portfolio Website',
         description:
-          `A portfolio website made in Angular 9`,
+          `A portfolio website made in Angular 9 with the source code available on Github`,
         thumbnail: 'assets/images/portfolio.png',
-        techStack: ['JavaScript', 'Angular', 'RxJs'],
-      },{
+        techStack: ['JavaScript', 'Angular', 'RxJs', 'Bulma', 'HTML', 'Scss'],
+      }, {
+        name: 'file-form-control-angular',
+        description:
+          `An <a href="https://www.npmjs.com/package/file-form-control-angular" target="_blank">npm package</a> that allows easily creating form controls for <input type="file"/>. A functionality missing in Angular.`,
+        thumbnail: 'assets/images/npm-package.png',
+        techStack: ['Angular', 'TypeScript', 'JavaScript'],
+      }, {
         name: 'Looters',
         description:
-          `An Android app that let's the users get the latest deals from online shopping websites like Flipkart & Amazon.`,
+          `An <a href="https://play.google.com/store/apps/details?id=com.deals.app" target="_blank">Android app</a> that lets users get the latest deals from online shopping websites like Flipkart & Amazon.`,
         thumbnail: 'assets/images/looters.png',
-        techStack: ['JavaScript', 'NodeJs', 'MongoDB', 'Flutter'],
+        techStack: ['JavaScript', 'NodeJs', 'MongoDB', 'Flutter', 'Firebase Firestore', 'Firebase Storage'],
       },
   ];
 
