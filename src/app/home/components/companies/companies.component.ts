@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-companies',
@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompaniesComponent implements OnInit {
 
-    company = {
-        logo: '',
-        name: '',
-        duration: ''
-    };
+  companies = [{
+    logo: 'assets/images/instasolv.png',
+    name: 'Adinio Services (InstaSolv)',
+    duration: 'May 2020 - Today'
+  }, {
+    logo: 'assets/images/quovantis-logo.png',
+    name: 'Quovantis',
+    duration: 'Jul 2016 - May 2020'
+  }];
 
   constructor() { }
 

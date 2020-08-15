@@ -6,9 +6,18 @@
     <div class="subtitle mb-4 column is-two-thirds l-font">where I've worked</div>
   </div>
 
-  <div class="columns">
-      <div class="column is-12 card">
-          
+  <div class="columns is-centered my-4" *ngFor="let company of companies">
+      <div class="column is-three-quarters-desktop is-three-quarters-tablet card pt-4 pb-4">
+          <div class="columns is-vcentered card-content">
+            <div class="column py-4 is-2-desktop is-2-tablet">
+              <img [attr.src]="company.logo" alt="">
+            </div>
+            <div class="column is-10-desktop is-10-tablet ml-4">
+              <div class="title mb-2 is-3">{{company.name}}</div>
+              
+              <div class="subtitle mt-1 is-5">{{ company.duration }}</div>
+            </div>
+          </div>
       </div>
   </div>
 </div>
