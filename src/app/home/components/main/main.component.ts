@@ -96,7 +96,7 @@ export class MainComponent implements OnInit {
       }, {
         name: 'file-form-control-angular',
         description:
-          `An <a href="https://www.npmjs.com/package/file-form-control-angular" target="_blank">npm package</a> that allows easily creating form controls for <input type="file"/>. A functionality missing in Angular.`,
+          `An <a href="https://www.npmjs.com/package/file-form-control-angular" target="_blank">npm package</a> that allows easily creating form controls for &lt;input type="file"/&gt;. A functionality missing in Angular.`,
         thumbnail: 'assets/images/npm-package.png',
         techStack: ['Angular', 'TypeScript', 'JavaScript'],
       }, {

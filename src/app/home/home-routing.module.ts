@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from '@shared/shared.module';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { CompaniesComponent } from './components/companies/companies.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { MainComponent } from './components/main/main.component';
 import { MyProjectsComponent } from './components/my-projects/my-projects.component';
@@ -22,6 +23,7 @@ const importedDeclarations = [
   MyProjectsComponent,
   ProjectSingleComponent,
   AboutMeComponent,
+  CompaniesComponent,
 ];
 
 const routes: Routes = [
