@@ -1,20 +1,18 @@
 <div class="container">
   <div class="what-i-do-content">
-    <div class="columns is-centered">
-      <div class="column is-two-thirds">
-        <div class="title is-1">
+    <div class="columns is-centered is-mobile">
+      <div class="title xl-font column is-two-thirds is-three-quarters-mobile">
           <b>What I do? </b>
-        </div>
       </div>
     </div>
 
-    <div class="columns is-centered mt-4">
+    <div class="columns is-centered is-mobile mt-4">
       <div class="column is-two-thirds">
         <div class="title l-font low-opacity">I'm a</div>
         <div class="title mt-0 l-font what-i-do" (click)="setNextIndex(); restartTimer()">
           {{ whatIDoList[currentWhatIDoListIndex] }}
         </div>
-        <div class="columns is-right is-centered">
+        <div class="columns is-right is-centered is-mobile">
           <div class="column is-1" *ngFor="let whatIDo of whatIDoList; let i = index;">
             <div class="indicator" [ngClass]="{'active': whatIDoList[currentWhatIDoListIndex] === whatIDo }" (mouseenter)="currentWhatIDoListIndex = i"></div>
           </div>
